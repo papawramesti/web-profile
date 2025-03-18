@@ -1,0 +1,324 @@
+/* import font style dari google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;800&display=swap");
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 80px;
+  /* background-color: #006400; */
+  background: linear-gradient(to right, #485935, #93a267, #93a267);
+}
+
+li,
+a,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #485935;
+  text-decoration: none;
+}
+
+header h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #93a267;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.nav-link {
+  list-style: none;
+}
+
+.nav-link li {
+  display: inline-block;
+  padding: 10px;
+}
+
+li a {
+  transition: all 0.3s ease 0s;
+}
+
+li a:hover {
+  color: #fbfbfb;
+}
+
+.tombol {
+  color: aliceblue;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.dropdown-menu {
+  /* display: none; */
+  list-style: none;
+  position: absolute;
+  top: 100px;
+  width: 100vw;
+  right: 0;
+  left: 0;
+  background-color: #fbfbfb70;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.dropdown-menu li {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-container {
+  display: flex;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 90%;
+}
+.profile {
+  flex: 1;
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 40%;
+}
+
+.profile-info {
+  flex: 2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.profile-info h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.profile-info span {
+  color: #485935;
+}
+
+.profile-info p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.social-media {
+  background-color: transparent;
+  font-size: 2rem;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.9s ease;
+  color: #ffffff;
+}
+
+#icon {
+  padding-left: 10px;
+}
+
+.social-media i:hover {
+  transform: scale(1.3) translateY(-5px);
+}
+
+.span{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #93a267;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+  /* position: relative; */
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+/* card pada portfolio */
+.porto {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card {
+  width: 300px;
+  /* padding: 20px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.card img {
+  width: 100%;
+  border-radius: 15px 0 15px 0;
+}
+
+.desc-card {
+  margin: 0 15px 0 15px;
+}
+.desc-card h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.desc-card p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  text-align: justify;
+}
+
+/* CONTACT */
+.contact {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #93a267;
+  color: #485935;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.contact-item i {
+  font-size: 24px;
+  color: #485935; /* Warna default ikon */
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #fbfbfb;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  color: #485935;
+}
+
+/* RESPONSIVE HANDPHONE */
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 90px;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .tombol {
+    display: block;
+  }
+
+  #menu-toggle:checked ~ .dropdown-menu {
+    /* display: block; */
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  /* responsif bagian home */
+  .profile-container {
+    flex-direction: column; /* Ubah jadi vertikal di layar kecil */
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .profile img {
+    width: 100px;
+    border-radius: 40%;
+  }
+
+  .profile-info h1 {
+    text-align: center;
+  }
+
+  .profile-info p {
+    text-align: justify;
+  }
+
+  .social-media {
+    margin: 0;
+    text-align: center;
+  }
+
+  .contact {
+    max-width: 250px;
+  }
+
+  .contact-item a {
+    font-size: 18px;
+  }
+}
