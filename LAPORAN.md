@@ -77,4 +77,4 @@ Folder ini berisi file.css yang berfungsi untuk melakukan styling terhadap tag-t
 
 ### Link web hosting vercel
 
-- [Web Paramesti Hayuananto](https://web-profile2.vercel.app/index.html)
+- [Web Paramesti Hayuananto](https://papaww-papawwws-projects.vercel.app/index.html)
